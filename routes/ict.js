@@ -94,7 +94,8 @@ function randEvt(msg, str, evt) {
   evt.updateTm = updateTm;
   report = str.report;
   max = _.random(1, 3);
-  for(i=0; i<max; i++) report.push(evt);
+  for (i = 0; i < max; i++) report.push(evt);
+  // lodash의 times를 알아봐야 겠다
   // _.times(max, report.push(evt));
   msg.cmdString.push(str);
 }
