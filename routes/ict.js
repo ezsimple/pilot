@@ -19,7 +19,7 @@ let doIt = function(req, res, next) {
   // -------------------------------
   // 장비별 타입별 다중 메세지 설정
   // -------------------------------
-  e_str = { eqid: 'E1', report: [] };
+  e_str = { eqId: 'E1', report: [] };
   e_evt = {
     pigmnum: '100',
     eatplan: '1',
@@ -34,7 +34,7 @@ let doIt = function(req, res, next) {
   };
   randEvt(msg, e_str, e_evt);
 
-  f_str = { eqid: 'F1', report: [] };
+  f_str = { eqId: 'F1', report: [] };
   f_evt = {
     pigmnum: '101',
     eatplan: '11',
@@ -47,7 +47,7 @@ let doIt = function(req, res, next) {
   };
   randEvt(msg, f_str, f_evt);
 
-  l_str = { eqid: 'L1', report: [] };
+  l_str = { eqId: 'L1', report: [] };
   l_evt = {
     aveday: '21',
     feedamt: '22',
@@ -59,7 +59,7 @@ let doIt = function(req, res, next) {
   };
   randEvt(msg, l_str, l_evt);
 
-  s_str = { eqid: 'S1', report: [] };
+  s_str = { eqId: 'S1', report: [] };
   s_evt = {
     temp: '31',
     ventil: '32',
@@ -71,7 +71,7 @@ let doIt = function(req, res, next) {
   };
   randEvt(msg, s_str, s_evt);
 
-  w_str = { eqid: 'W1', report: [] };
+  w_str = { eqId: 'W1', report: [] };
   w_evt = {
     warteramt: '41',
     updateTm: '',
