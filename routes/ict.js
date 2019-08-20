@@ -94,6 +94,7 @@ function randEvt(msg, str, evt) {
   evt.updateTm = updateTm;
   report = str.report;
   max = _.random(1, 3);
-  _.times(max, report.push(evt));
+  for(i=0; i<max; i++) report.push(evt);
+  // _.times(max, report.push(evt));
   msg.cmdString.push(str);
 }
