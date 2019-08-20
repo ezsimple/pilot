@@ -4,11 +4,12 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "server": "nodemon App.js"
+    "start": "nodemon App.js"
   },
   "dependencies": {
     "express": "^4.17.1",
     "lodash": "^4.17.15",
+    "moment": "^2.24.0",
     "nodemon": "^1.19.1"
   }
 }
