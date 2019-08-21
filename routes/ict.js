@@ -1,18 +1,25 @@
 const _ = require('lodash'); // 오우~ 판타스틱!! lodash
 const moment = require('moment');
+querystring = require('querystring');
 
 function prettyJson(msg) {
   return JSON.stringify(msg, undefined, 2);
 }
 
 let doIt = function(req, res, next) {
+
+  farmno = req.params.farmno;
+  icno = req.params.icno;
+
+  // console.log('farmNo:', farmno,"icNo:", icno);
+
   // -------------------------------
   // 기본 메세지 설정
   // -------------------------------
   let msg = {
     type: 'res',
-    farmNo: '1387',
-    icNo: 'I1',
+    farmNo: farmno,
+    icNo: icno,
     cmdString: [],
   };
 

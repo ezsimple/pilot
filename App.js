@@ -7,7 +7,7 @@ app.use(express.static('public'));
 
 // route 파일로 각각 분리
 const ictSvc = require('./routes/ict');
-app.use('/req/ict', ictSvc.doIt);
+app.use('/req/ict/:farmno/:icno', ictSvc.doIt);
 
 // start cmd : $ yarn run server
 const PORT = process.env.PORT || 5000;
