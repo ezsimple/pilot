@@ -11,7 +11,11 @@ let doIt = function(req, res, next) {
   farmno = req.params.farmno;
   icno = req.params.icno;
 
+  // ---------------------------------------------
+  // url경로를 이용한 변수는 req.params.변수명
+  // ?변수명=값 과 같은 경우 req.query.변수명
   // console.log('farmNo:', farmno,"icNo:", icno);
+  // ---------------------------------------------
 
   // -------------------------------
   // 기본 메세지 설정
